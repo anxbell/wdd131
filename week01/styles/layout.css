@@ -18,11 +18,13 @@ body {
 
 header {
     background-color: cornflowerblue;
-    padding: 2rem;
     grid-area: header;
     color: white;
+    height: 100px;
 }
-
+header h2 {
+    padding-bottom: 30px;
+}
 nav {
     background-color: #000;
     color: white;
@@ -61,10 +63,7 @@ main {
     background-color: lightgray;
     grid-area: main;
     width: auto;
-    height: 400px;
-}
 
-main h1 {
     height: 400px;
     padding: 1rem;
 }
