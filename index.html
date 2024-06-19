@@ -3,9 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>Valerie Sanchez | WDD 131</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer=""></script>
+    <meta name="description" content="Valerie Sanchez's WDD 131 home page, information about Valerie Sanchez and short description of El Salvador. ">
+    <meta name="author" content="Valerie Sanchez">
+
 </head>
 <body>
-    <h1>WDD 131</h1>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - <span>Valerie Sanchez</h1>
+    
+        <nav>
+            
+            <ul class="navigation wrap">
+                <li><a href="#" title="LinkedIn">LinkedIn</a></li>
+                <li><a href="#" title="I-Learn">I-Learn</a></li>
+                <li><a href="#" title="Scripture">Scripture</a></li>
+                <li><a href="#" title="Final Project">Final Project</a></li>
+            </ul>
+            
+        </nav>
+
+    </header>
+
+    <main>
+        
+        <section class="card">
+            <h2 class="subheadings">About Me</h2>
+            <div class="card-content">
+                <div class="card-content-about">
+                    <p>My name is Valerie Sanchez, I am twenty-one years old, I was born in Los Angeles, California but I have lived almost all my life in El Salvador, I moved back to the United States at the age of nineteen. 
+                        I started college in El Salvador in the Faculty of Medicine but I decided to move to the United States, I was majoring in Biology (Biomedical Sciences), because I wanted 
+                        to attend Medical School, then I transfered universities and now I am currently majoring in Software development.
+
+
+                    </p>
+                    <figure>
+                        <img src="images/me.jpg" alt="Valerie Sanchez picture">
+                    </figure>
+                </div>
+                <h3>El Salvador</h3>
+                <hr>
+                <div class="card-content-country">
+                    <figure>
+                        <img src="images/flag.png" alt="El Salvador Flag">
+                        <figcaption>El Salvador flag</figcaption>
+                    </figure>
+                    <p>El Salvador is a small, densely populated country in Central America known for its beautiful beaches, landscapes, and colorful culture; people is very friendly and really good people. Pupusas are a famous dish in El Salvador. Despite its small size, it boasts a diverse range of attractions, from ancient Mayan ruins to bustling markets and colonial cities.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 class="subheadings">Web Dev Resources</h2>
+            <div class="card-content">
+                <ul>
+                    <li><a href="https://devdocs.io/" target="_blank">DevDocs</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                    <li><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a></li>
+                    <li><a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a></li>
+                    <li><a href="CSS-https://css-tricks.com/" target="_blank">CSS-Tricks</a></li>
+                </ul>
+
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p> © <span id="currentyear"></span> 🦝 Valerie Sanchez 🦝</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
