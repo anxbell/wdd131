@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <meta name="description" content="WDD 131 Country Page">
+    <meta name="author" content="Valerie Sanchez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <title>Country Page | WDD 131</title>
+
+</head>
+<body>
+    <header>
+        <h1>Italy</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/italy-large.webp" media="(min-width: 1000px )"  width="1500" height="750">
+                <img src="images/italy-small-.webp" alt="Italy" width="480" height="640">
+            </picture>
+        </div>
+
+            <div class="data">
+                <h2>Data</h2>
+
+                <h3>Area:</h3> 
+                <p>116,350 sq mi</p>
+
+                <h3>Population:</h3>
+                <p>58,940,000</p>
+
+                <h3>Capital:</h3>
+                <p>Rome</p>
+
+                <h3>Languages:</h3>
+                <p>Italian</p>
+
+                <h3>Currency:</h3>
+                <p>Euro</p>
+
+                <h3>Time Zone:</h3>
+                <p>CET</p>
+
+                <h3>Calling Code:</h3>
+                <p>+39</p>
+
+                <h3>Internet TLD:</h3>
+                <p>.IT</p>       
+            </div>
+        
+            <div class="weather">
+                <h2>Weather</h2>
+
+                <div class="icon">
+                <img src="images/icon-weather.svg" alt="weather icon" width="150" height="150">
+                </div>
+                <h3>Temperature:</h3>
+                <p><span id="temperature"></span>°C</p>
+                <h3>Conditions:</h3>
+                <p><span id="condition"></span></p>
+                <h3>Wind:</h3>
+                <p><span id="wind"></span> km/h</p>
+                <h3>Windchill:</h3>
+                <p><span id="windchill"></span></p>   
+
+            </div>
+
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🦝 Valerie Sanchez 🦝</p>
+        <p id="lastModified"></p>
+    </footer>
+
+
+    <script defer src="scripts/place.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+
+</body>
+</html>
