@@ -1,0 +1,203 @@
+@media (min-width: 740px) {
+	h1 {
+		font-size: 1.6rem;
+		text-align: center;
+        margin: 1rem;
+        padding-top: 10px;
+        font-weight: 700;
+	}
+
+	h2 {
+		font-size: 1.2rem;
+		text-align: center;
+        color: navy;
+	}
+
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		flex-direction: row;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+        color: #1F1300;
+	}
+
+
+    header {
+		display: flex;
+		align-items: center;
+	    justify-content: space-between;
+        flex-direction: row;
+        font-size: 1.2rem;
+    
+
+	}
+	
+	nav {
+		justify-content: flex-end;
+		flex-direction: row;
+        padding-right: 10px;
+        
+        
+	}
+	nav a {
+		flex: 1 1 100%;
+        
+	}
+
+    .image-grid {
+        grid-template-columns: 1fr 1fr;
+    } 
+
+    .image-grid figure {
+        margin: 0;
+        padding: 10px;
+
+    }
+
+    .image-grid img {
+        height: 25vw;
+        padding: 0;
+
+    }
+
+    .image-grid figcaption {
+        padding: 0;
+        padding-top: 5px;
+        text-align: center;
+    }
+
+	.temple-card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		overflow: hidden; /* Ensure images are cropped if necessary */
+		background-color:  #fae2d08f;
+		padding: 20px;
+		overflow: hidden;
+		border: 1px solid #472c002f;
+	}
+	
+	.temple-card img {
+		/* height: 55vw; */
+		align-items: center;
+		width: auto;
+		width: 100%;
+		margin-top: 20px;
+		height: auto; /* Maintain aspect ratio */
+		object-fit: cover; /* Ensure images fill their container */
+		box-shadow: 0.5px 0.5px 5px 2.5px rgba(0, 0, 0, 0.521)
+	}
+
+}
+
+@media (min-width: 1040px) {
+	h1 {
+		font-size: 1.6rem;
+		text-align: center;
+        margin: 1rem;
+        padding-top: 10px;
+        font-weight: 700;
+	}
+
+	h2 {
+		font-size: 1.2rem;
+		text-align: center;
+        color: navy;
+	}
+
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		flex-direction: row;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+        color: #1F1300;
+	}
+
+
+    header {
+		display: flex;
+		align-items: center;
+	    justify-content: space-between;
+        flex-direction: row;
+        font-size: 1.2rem;
+    
+
+	}
+	
+	nav {
+		justify-content: flex-end;
+		flex-direction: row;
+        padding-right: 10px;
+        
+        
+	}
+	nav a {
+		flex: 1 1 100%;
+        
+	}
+
+    .image-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    } 
+
+    .image-grid figure {
+        margin: 0;
+        padding: 10px;
+
+    }
+
+    .image-grid img {
+        height: 15vw;
+        padding: 0;
+
+    }
+
+    .image-grid figcaption {
+        padding: 0;
+        padding-top: 5px;
+        text-align: center;
+    }
+
+	.temple-card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		overflow: hidden; /* Ensure images are cropped if necessary */
+		background-color:  #fae2d08f;
+		padding: 20px;
+		overflow: hidden;
+		border: 1px solid #472c002f;
+	}
+	
+	.temple-card img {
+		/* height: 55vw; */
+		align-items: center;
+		width: auto;
+		width: 100%;
+		margin-top: 20px;
+		height: auto; /* Maintain aspect ratio */
+		object-fit: cover; /* Ensure images fill their container */
+		box-shadow: 0.5px 0.5px 5px 2.5px rgba(0, 0, 0, 0.521)
+	}
+
+
+}
+
+
+
+
+

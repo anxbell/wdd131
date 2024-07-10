@@ -1,0 +1,189 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    
+
+}
+
+h1 {
+
+	font-family: "Roboto", sans-serif;
+	font-size: 1.6rem;
+	margin: 1rem;
+    color: #000;
+    padding-top: 10px;
+    padding-bottom: 10px;    
+    font-weight: 700;
+}
+
+h2 {
+	font-size: 1.2rem;
+	color: navy;
+	text-align: center;
+	margin: 1rem;
+    padding-top: 10px;
+}
+
+nav {
+	max-width: 700px;
+}
+
+header {
+
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+  
+    
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+    padding-top: 7px;
+    cursor: pointer;
+
+
+}
+
+#menu::before {
+	content: "☰";
+
+}
+
+#menu.open::before {
+	content: "✖";
+}
+
+.mobile {
+	display: flex;
+	flex-direction: column;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	color: #fff;
+    
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #000;
+}
+.navigation a:hover {
+
+	font-weight: 700;
+    text-decoration: underline;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+.open a:hover {
+
+    background-color: #291b04;
+    color: #f7f0ee ;
+}
+
+
+#lastModified {
+    color: #000047;
+}
+
+.image-grid {
+    display: grid;
+    padding: 0;
+    gap: 20px;
+    justify-items: center;
+}
+
+.image-grid img {
+    height: 55vw;
+    align-items: center;
+
+}
+
+.album-content {
+    margin-bottom: 1.5rem;
+}
+
+.image-grid figcaption {
+    padding: 0;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.image-grid figure {
+    margin: 0;
+    padding: 10px;
+
+}
+
+body {
+    background-color: #fdf4ed; /* Peach Puff */
+    color: #472c00; /* Dark Brown */
+}
+
+
+header, nav {
+    background-color: #f38361 ; /* Pastel Orange FF7F50*/
+    color: #FFFFFF; /* Dark Brown */
+}
+
+footer {
+    background-color: #f77a4c; /* Coral fa8459*/
+    color: #000; /* White */
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.temple-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden; /* Ensure images are cropped if necessary */
+    background-color:  #fae2d08f;
+    padding: 20px;
+    overflow: hidden;
+    border: 1px solid #472c002f;
+
+}
+
+.temple-card img {
+    /* height: 55vw; */
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure images fill their container */
+    box-shadow: 0.5px 0.5px 5px 2.5px rgba(0, 0, 0, 0.521);
+    max-height: 260px;
+    max-width: 390px;
+}
+
+
