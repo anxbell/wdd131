@@ -72,8 +72,7 @@ const temples = [
 		location: "Laie, Hawaii",
 		dedicated: "1915, June, 1",
 		area: 42100,
-		imageUrl:
-		"https://photos.smugmug.com/LDS-Temples/Laie-Hawaii-Temple/i-Bpsswg3/17/MbLNF8ZVDmGpPSDmHXscm2RqzWwhLsVFNQnDWrb4r/XL/Fountain%20Sunset%20-%20Laie%20Hawaii%20Temple%20-%20Alan%20Fullmer-XL.jpg" 
+		imageUrl:"https://photos.smugmug.com/LDS-Temples/Laie-Hawaii-Temple/i-Bpsswg3/17/MbLNF8ZVDmGpPSDmHXscm2RqzWwhLsVFNQnDWrb4r/XL/Fountain%20Sunset%20-%20Laie%20Hawaii%20Temple%20-%20Alan%20Fullmer-XL.jpg" 
 	},
 
 	{
@@ -108,8 +107,7 @@ const temples = [
 		location: "Sapporo Japan",
 		dedicated: "2016, August, 21",
 		area: 48480,
-		imageUrl:
-		"https://churchofjesuschristtemples.org/assets/img/temples/sapporo-japan-temple/sapporo-japan-temple-3374-main.jpg" 
+		imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/sapporo-japan-temple/sapporo-japan-temple-3374-main.jpg" 
 	}
 	
   ];
