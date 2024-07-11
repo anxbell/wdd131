@@ -40,9 +40,11 @@ header {
 }
 
 main {
-    display: flex;
+
     justify-content: center;
-    
+    flex-direction: column;
+    margin-bottom: 50px;
+    align-items: center;
 }
 
 
@@ -125,9 +127,7 @@ main {
 
 }
 
-.album-content {
-    margin-bottom: 1.5rem;
-}
+
 
 .image-grid figcaption {
     padding: 0;
@@ -161,8 +161,9 @@ footer {
 
 
 .temple-card {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
+    text-align: center;
     align-items: center;
     justify-content: space-between;
     overflow: hidden; /* Ensure images are cropped if necessary */
