@@ -182,8 +182,8 @@ footer {
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Ensure images fill their container */
     box-shadow: 0.5px 0.5px 5px 2.5px rgba(0, 0, 0, 0.521);
-    height: 260px;
-    width: 390px;
+    max-height: 260px;
+    max-width: 390px;
 }
 
 
