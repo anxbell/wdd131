@@ -1,0 +1,133 @@
+:root {
+    --primary-color: #B76E79; /* Main color, can be used for headers or primary buttons */
+    --secondary-color: #F1A3AD; /* Accent color, suitable for secondary buttons or highlights */
+    --tertiary-color: #FFBEC9; /* Additional accent color, for subtle highlights or borders */
+    --background-color: #ffdce877; /* Background color, for the main page background */
+    --light-background-color: #FFDAE5; /* Light background color, for sections or cards */
+    --text-color: #FFFFFF; /* Text color, for text on darker backgrounds */
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* --------- HEADER --------- */
+header {
+
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    border-radius: 0px 0px 2px 2px;
+    background-color: var(--primary-color);
+
+}
+
+/* ---------- HEADINGS ------------ */
+
+h1, h2, h3, figcaption {
+
+    font-family: 'Georgia', serif;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #fff;
+    /* -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: #D3D3D3 ; */
+    
+}
+
+h2 {
+    padding: 10px 0;
+}
+
+/* --------- BODY ---------- */
+
+body {
+
+    font-family: 'Lato', sans-serif;
+    width : 100%;
+    max-width : 750px;
+    margin : 0 auto;
+    padding-top : 0;
+    padding-bottom: 0;
+
+   
+}
+
+/* ---------- MAIN ----------- */
+
+main {
+    padding: 30px 45px;
+    text-align: justify;
+    background-color: var(--background-color);
+    border-radius: 2px;
+}
+
+.description {
+    display: grid;
+}
+
+.description p {
+    margin-bottom: 15px;
+}
+
+.description h2 {
+    padding: 0;
+    padding-bottom: 5px;
+}
+
+/*----------- FOOTER --------------*/
+
+footer {
+
+    margin-top: 20px;
+    background-color: var(--secondary-color);
+    color: #000; /* White */
+    text-align: center;
+    padding: 9px 0;
+    border-radius: 2px 2px 0px 0px;
+    margin-bottom: 0;
+
+}
+
+#lastModified {
+    color: rgb(49, 42, 42);
+}
+
+
+.center img {
+    width: 350px;
+    height: fit-content;
+    
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.center figcaption {
+    margin-top: 5px;
+}
+
+#georgia {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+}
+
+#ds {
+    font-family: "Dancing Script", serif;
+    font-size: 1.3rem;
+    font-style: italic;
+}
