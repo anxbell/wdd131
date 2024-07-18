@@ -1,10 +1,23 @@
+// Function to update the review counter display
 function updateReviewCounter() {
-    // Get the current counter value from localStorage
+
     let currentCount = parseInt(localStorage.getItem('reviewCounter')) || 0;
 
-    // Update the counter display on the page
     document.getElementById('reviewCounter').textContent = currentCount;
 }
 
-// Call the function to update the counter when the page loads
-updateReviewCounter();
+function incrementReviewCounter() {
+
+    let currentCount = parseInt(localStorage.getItem('reviewCounter')) || 0;
+
+    currentCount++;
+    localStorage.setItem('reviewCounter', currentCount);
+
+    document.getElementById('reviewCounter').textContent = currentCount;
+}
+
+
+window.addEventListener('load', () => {
+    incrementReviewCounter();
+    updateReviewCounter();
+});
