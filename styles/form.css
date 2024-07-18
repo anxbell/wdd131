@@ -56,6 +56,13 @@ header {
     
 }
 
+.wf1 div {
+
+    font-size: 0.9rem;
+    font-weight: bold;
+
+}
+
 #check {
     font-style: italic;
 }
@@ -89,8 +96,8 @@ header {
     width: 96%;
     max-width: 400px;
     margin: -1rem 2% 2rem 2%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     box-shadow: 1px 1px 4px #999;
     font-size: 0.95rem;
 
@@ -121,7 +128,7 @@ footer {
     background-color: #f77a4c; /* Coral fa8459*/
     color: #000; /* White */
     text-align: center;
-    padding: 15px 0;
+    padding: 9px 0;
     border-radius: 2px 2px 0px 0px;
     margin-bottom: 0;
 
