@@ -69,9 +69,6 @@ main {
     border-radius: 2px;
 }
 
-.description {
-    display: grid;
-}
 
 .description p {
     margin-bottom: 15px;
@@ -102,7 +99,7 @@ footer {
 
 
 .center img {
-    width: 350px;
+    width: 100%;
     height: fit-content;
     
 }
