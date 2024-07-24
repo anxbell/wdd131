@@ -1,0 +1,116 @@
+:root {
+    --primary-color: #B76E79; /* Main color, can be used for headers or primary buttons */
+    --secondary-color: #F1A3AD; /* Accent color, suitable for secondary buttons or highlights */
+    --tertiary-color: #FFBEC9; /* Additional accent color, for subtle highlights or borders */
+    --background-color: #ffdce877; /* Background color, for the main page background */
+    --light-background-color: #FFDAE5; /* Light background color, for sections or cards */
+    --text-color: #FFFFFF; /* Text color, for text on darker backgrounds */
+    --gray-color: rgb(49, 42, 42);
+}
+
+@media (min-width: 740px) {
+
+    h1 {
+		font-size: 1.6rem;
+		text-align: center;
+        margin: 1rem;
+        font-weight: 700;
+
+	}
+
+	h2 {
+		font-size: 1.4rem;
+		text-align: center;
+
+	}
+	
+
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		flex-direction: row;
+	}
+
+	.navigation a {
+        
+		display: block;
+		flex: 1 1 100%;
+        color: #fff;
+        padding: 0 10px;
+
+	}
+
+    .navigation a:hover {
+        background-color: var(--primary-color);
+        text-decoration: none;
+    }
+
+
+    header {
+		display: flex;
+		align-items: center;
+	    justify-content: space-between;
+        flex-direction: row;
+        font-size: 1.2rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    
+
+	}
+	
+	nav {
+		justify-content: flex-end;
+		flex-direction: row;
+        padding-right: 10px;
+        
+        
+	}
+	nav a {
+		flex: 1 1 100%;
+        
+	}
+
+
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #menu {
+        display: none;
+    }
+    
+    .navigation {
+        display: flex;
+    }
+
+    .image-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+    
+    .image-grid .item {
+        background-color: var(--light-background-color);
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    
+    .image-grid img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    
+    main {
+        max-width: 1240px;
+        margin: 0 auto;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+}

@@ -1,0 +1,268 @@
+:root {
+    --primary-color: #B76E79; /* Main color, can be used for headers or primary buttons */
+    --secondary-color: #F1A3AD; /* Accent color, suitable for secondary buttons or highlights */
+    --tertiary-color: #FFBEC9; /* Additional accent color, for subtle highlights or borders */
+    --background-color: #ffdce877; /* Background color, for the main page background */
+    --light-background-color: #FFDAE5; /* Light background color, for sections or cards */
+    --text-color: #FFFFFF; /* Text color, for text on darker backgrounds */
+    --gray-color: rgb(49, 42, 42);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* --------- HEADER --------- */
+header {
+
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0px 0px 2px 2px;
+    background-color: var(--primary-color);
+
+}
+
+/* ---------- HEADINGS ------------ */
+
+h1, h2, h3, figcaption {
+
+    font-family: 'Georgia', serif;
+}
+/* declarar no left align */
+h1 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 55px;
+    /* -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: #D3D3D3 ; */
+    
+}
+
+h2 {
+    padding: 10px 0;
+}
+
+/* --------- BODY ---------- */
+
+body {
+
+    font-family: 'Lato', sans-serif;
+    margin : 0 auto;
+    padding-top : 0;
+    padding-bottom: 0;
+    min-width: 320px;
+   
+}
+
+/* ---------- MAIN ----------- */
+
+main {
+    padding: 30px 20px;
+    text-align: justify;
+    background-color:rgba(255, 220, 232, 0.205);
+    border-radius: 2px;
+}
+
+
+.description p {
+    margin-bottom: 15px;
+}
+
+.description h2 {
+    padding: 0;
+    padding-bottom: 5px;
+}
+
+/*----------- FOOTER --------------*/
+
+footer {
+
+    /* margin-top: 20px; */
+    background-color: var(--secondary-color);
+    color: #000; /* White */
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 2px 2px 0px 0px;
+    margin-bottom: 0;
+    font-size: 1rem;
+
+}
+
+#lastModified {
+    color: rgb(49, 42, 42);
+}
+
+/* ------- CENTER IMAGES -------- */
+.center img {
+    width: 100%;
+    height: fit-content;
+    
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.center figcaption {
+    margin-top: 5px;
+}
+
+#georgia {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+}
+
+#ds {
+    font-family: "Dancing Script", serif;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+/* ---------- SMALL VIEW NAV --------- */
+
+/* ----------- HAM MENU ---------- */
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: var(--gray-color);
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+    padding-top: 7px;
+    cursor: pointer;
+
+
+}
+
+#menu::before {
+	content: "☰";
+    color: #fff;
+}
+
+#menu.open::before {
+	content: "✖";
+}
+
+.mobile {
+	display: flex;
+	flex-direction: column;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+    color: #000;
+
+}
+
+.navigation.open {
+    margin-top: 20px;
+}
+.navigation.open li {
+
+    font-size: 1.1rem;
+    
+
+}
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+
+}
+.navigation a:hover {
+
+	font-weight: 700;
+    text-decoration: underline;
+    background-color: var(--light-background-color);
+}
+
+
+.open a {
+	display: block;
+}
+
+.open a:hover {
+
+    /* background-color: #291b04; */
+    color: 	var(--gray-color);
+    text-decoration: none;
+}
+
+/* ----- SECTION ONE -------- */
+
+/* .section-1{
+    display: flex;
+    flex-direction: column;
+
+} */
+
+.section-1 h2, .section-2 h2{
+    margin-top: 25px;
+    text-align: left;
+}
+
+.item1 {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    margin-top: 15px;
+}
+
+.section-1 img, .section-2 img  {
+    box-shadow: 0.5px 0.5px 5px 2.5px rgba(0, 0, 0, 0.068);
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    max-width: 350px;
+
+
+}
+
+img {
+    border-radius: 5px;
+}
+
+
+.section-2 .item1 {
+    display: flex;
+}
+
+.section-0 {
+    margin-top:20px;
+    padding-bottom: 10px;
+}
+
+.section-0 div, .section-1 div, .desktop-item3 div {
+    margin-top: 5px;
+}
+
+.desktop-item3 div, #h2-desktop  {
+    display: none;
+}
+
+

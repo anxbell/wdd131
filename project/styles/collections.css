@@ -1,0 +1,242 @@
+:root {
+    --primary-color: #B76E79; /* Main color, can be used for headers or primary buttons */
+    --secondary-color: #F1A3AD; /* Accent color, suitable for secondary buttons or highlights */
+    --tertiary-color: #FFBEC9; /* Additional accent color, for subtle highlights or borders */
+    --background-color: #ffdce877; /* Background color, for the main page background */
+    --light-background-color: #FFDAE5; /* Light background color, for sections or cards */
+    --text-color: #FFFFFF; /* Text color, for text on darker backgrounds */
+    --gray-color: rgb(49, 42, 42);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* --------- HEADER --------- */
+header {
+
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0px 0px 2px 2px;
+    background-color: var(--primary-color);
+
+}
+
+/* ---------- HEADINGS ------------ */
+
+h1, h2, h3, figcaption {
+
+    font-family: 'Georgia', serif;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 55px;
+
+    
+}
+
+h2 {
+    padding: 10px 0;
+}
+
+/* --------- BODY ---------- */
+
+body {
+
+    font-family: 'Lato', sans-serif;
+    margin : 0 auto;
+    padding-top : 0;
+    padding-bottom: 0;
+    min-width: 320px;
+   
+}
+
+/* ---------- MAIN ----------- */
+
+main {
+    padding: 30px 20px;
+    text-align: justify;
+    background-color:rgba(255, 220, 232, 0.205);
+    border-radius: 2px;
+}
+
+
+.description p {
+    margin-bottom: 15px;
+}
+
+.description h2 {
+    padding: 0;
+    padding-bottom: 5px;
+}
+
+/*----------- FOOTER --------------*/
+
+footer {
+
+    /* margin-top: 20px; */
+    background-color: var(--secondary-color);
+    color: #000; /* White */
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 2px 2px 0px 0px;
+    margin-bottom: 0;
+    font-size: 1rem;
+
+}
+
+#lastModified {
+    color: rgb(49, 42, 42);
+}
+
+
+/* ---------- SMALL VIEW NAV --------- */
+
+/* ----------- HAM MENU ---------- */
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: var(--gray-color);
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+    padding-top: 7px;
+    cursor: pointer;
+
+
+}
+
+#menu::before {
+	content: "☰";
+    color: #fff;
+}
+
+#menu.open::before {
+	content: "✖";
+}
+
+.mobile {
+	display: flex;
+	flex-direction: column;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+    color: #000;
+
+}
+
+.navigation.open {
+    margin-top: 20px;
+}
+.navigation.open li {
+
+    font-size: 1.1rem;
+    
+
+}
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+
+}
+.navigation a:hover {
+
+	font-weight: 700;
+    text-decoration: underline;
+    background-color: var(--light-background-color);
+}
+
+
+.open a {
+	display: block;
+}
+
+.open a:hover {
+
+    /* background-color: #291b04; */
+    color: 	var(--gray-color);
+    text-decoration: none;
+}
+
+
+/* ----------------------------- */
+
+
+
+
+#sortButton {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 20px;
+    background-color: var(--tertiary-color);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#sortButton:hover {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 20px;
+    background-color: var(--light-background-color);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
+
+main {
+    padding: 30px 20px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.image-grid .item {
+    background-color: var(--light-background-color);
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.image-grid img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+
+#sortStatus {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: #000;
+    font-weight: 500;
+    font-size: 1.05rem;
+    border-radius: 5px;
+}
+
