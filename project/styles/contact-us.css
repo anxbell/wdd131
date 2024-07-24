@@ -234,7 +234,7 @@ footer {
 
 #center img {
     width: 350px;
-    height: fit-content;
+    height: auto;
 }
 
 #center {

@@ -265,4 +265,6 @@ img {
     display: none;
 }
 
-
+source {
+    height: auto;
+}
